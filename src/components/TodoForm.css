@@ -1,0 +1,148 @@
+.todo-form-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form {
+  width: 100%;
+}
+
+.form-title-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-title-input:focus {
+  border-color: #667eea;
+}
+
+.form-expanded {
+  margin-top: 1rem;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-description-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-description-input:focus {
+  border-color: #667eea;
+}
+
+.form-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.form-priority-select,
+.form-date-input {
+  padding: 0.5rem;
+  border: 2px solid #e0e7ff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-priority-select:focus,
+.form-date-input:focus {
+  border-color: #667eea;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btn-add,
+.btn-cancel {
+  padding: 0.625rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add {
+  background: #667eea;
+  color: white;
+}
+
+.btn-add:hover {
+  background: #5568d3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.btn-cancel {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.btn-cancel:hover {
+  background: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .todo-form-container {
+    padding: 1rem;
+  }
+
+  .form-options {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-priority-select,
+  .form-date-input {
+    flex: 1;
+  }
+}
