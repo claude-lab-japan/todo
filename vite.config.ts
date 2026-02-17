@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/todo/',
+  // GitHub Pages uses '/todo/', Vercel uses '/'
+  base: process.env.VERCEL ? '/' : '/todo/',
 })
