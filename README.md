@@ -2,6 +2,11 @@
 
 React + TypeScript で構築されたモダンなTODOアプリケーションです。
 
+## デプロイ先
+
+- **Vercel**: https://todo-brown-one-50.vercel.app
+- **GitHub Pages**: https://claude-lab-japan.github.io/todo/
+
 ## 機能
 
 ✅ **基本的なCRUD操作**
